@@ -1,0 +1,37 @@
+.brands{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;   
+        
+        img{
+            filter: grayscale(1);
+            cursor: pointer;
+            transition: all 320ms ease-out;
+
+            &:hover{
+                filter: grayscale(0);
+            }
+
+            @include media-breakpoint-down(md){
+                margin-bottom: 3rem;
+                margin-right: 2rem;
+                filter: grayscale(0);
+            }
+        }
+
+        @include media-breakpoint-down(md){
+            justify-content: center;
+        }
+    }
+
+    h5{
+        color: #919DAB;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 26px;
+    }
+}

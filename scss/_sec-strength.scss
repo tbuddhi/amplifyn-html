@@ -1,0 +1,68 @@
+.strength{
+    margin-top: 100px;
+    background: linear-gradient(to left,$bg-secondary 55%,#fff 45%);
+    position: relative;
+
+    @include media-breakpoint-down(sm){
+        background: linear-gradient(to top,$bg-secondary 52%,#fff 48%);
+        margin-top: 50px;
+    }
+
+    &__widgets{
+        display: flex;
+        flex-direction: column;
+
+        > div{
+            padding: 35px;
+        }
+    }
+
+    &__listcol{
+        padding: 88px 100px;
+        padding-bottom: 50px;
+
+        @include media-breakpoint-down(sm){
+            padding-top: 100px !important;
+        }
+
+        @include media-breakpoint-down(md){
+            padding: 60px 40px;
+            padding-right: 1rem;
+        }
+
+        ul {
+            li{
+                margin-bottom: 4rem;
+                &:nth-last-child(1){
+                    margin-bottom: 0;
+                }
+        
+                img{
+                    margin-right: 32px;
+                }
+                p{
+                    font-size: 30px;
+                    color: $text-primary;
+                    font-weight: $semi-bold;
+                    line-height: 1;
+                }
+
+                @include media-breakpoint-down(sm){
+                    p{
+                        font-size: 26px;
+                    }
+                    
+                    img{
+                        margin-right: 22px;
+                    }
+                }
+            }
+        }       
+    }
+
+    &__dotwidget{
+        position: absolute;
+        right: 12px;
+        bottom: 12px;
+    }
+}

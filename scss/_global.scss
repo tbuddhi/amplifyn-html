@@ -1,0 +1,139 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+a, button {
+    &:focus {
+        outline: none;
+    }
+}
+
+body {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem;
+    color: $black;
+    transition: all 320ms ease-out;
+    
+    main{
+        margin-top: 57px;
+
+        p{
+            opacity: 0.9;
+        }
+    }
+
+    .section{
+        &__button{
+            display: inline-block;
+
+            a{
+                display: flex;
+                padding: 16px 32px;
+                font-size: 18px;
+                color: $white;
+                border-radius: 4px;
+                transition: all 320ms ease-out;
+
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+
+            &--type1{
+                background-color: $blue-100;
+            }
+
+            &--type2{
+                border: 2px solid $blue-100;
+                color: $blue-100 !important;
+
+                &:hover{
+                    color: $white !important;
+                    background-color: $blue-100;
+                }
+            }     
+        }
+
+        &__title{
+            color: $text-primary;
+            font-weight: $bold;
+            font-size: 38px;
+
+            &::before{
+                content: '';
+                background-color: #FED023;
+                width: 40px;
+                height: 4px;
+                display: block;
+                margin-bottom: 1.5rem;
+            }
+
+            @include media-breakpoint-down(sm){
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+.countWidget{
+    display: flex;
+    flex-direction: column;
+
+    &__count{
+        color: $text-primary;
+        font-size: 66px;
+        font-weight: $semi-bold;
+        line-height: 1;
+    }
+
+    &__title{
+        color: $gray-400;
+    }
+}
+
+.card{
+    padding: 2rem;
+    background-color: $bg-primary;
+    @include media-breakpoint-down(xs){
+        padding: 1rem;
+    }
+
+    &__title{
+        font-family: 'Manrope', sans-serif;
+        font-weight: $semi-bold;
+        font-size: 22px;
+    }
+
+    &__subtitle{
+        font-size: 16px;
+        font-weight: $light;
+    }
+
+    &__body{
+        display: flex;
+
+        img{
+            margin-right: 16px;
+        }
+
+        p{
+            font-weight: $regular;
+        }
+
+        @include media-breakpoint-down(xs){
+            p{
+                font-size: 16px;
+            }
+            img{
+                margin-right: 8px;
+            }
+            span{
+                line-height: 1;
+            }
+        }
+    }
+}
+
+

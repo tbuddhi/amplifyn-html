@@ -1,0 +1,20 @@
+.contact{
+    padding: 112px 0;
+
+    @include media-breakpoint-down(sm){
+        padding: 50px 0;
+    }
+
+    &__title{
+        color: $text-primary;
+        font-size: 42px;
+        font-family: 'Manrope', sans-serif;
+        font-weight: $semi-bold;
+        margin-bottom: 1.2rem;
+
+        @include media-breakpoint-down(sm){
+            font-size: 32px;
+            font-weight: $bold;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+// Import Bootstrap
+@import "../vendor/bootstrap/scss/bootstrap.scss";
+
+// Variables
+@import "variables";
+
+// Import Custom styles
+@import "global";
+@import "header";
+@import "footer";
+
+// Home page sections
+@import "sec-hero";
+@import "sec-brands";
+@import "sec-growteam";
+@import "sec-help";
+@import "sec-strength";
+@import "sec-solutions";
+@import "sec-services";
+@import "sec-global";
+@import "sec-contact";

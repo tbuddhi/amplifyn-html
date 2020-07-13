@@ -1,0 +1,55 @@
+.solutions{
+    padding: 100px 0;
+    background-image: url('../img/Section_image_2.png');
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include media-breakpoint-down(sm){
+        padding: 50px 0;
+        background-size: auto 62%;
+        background-position: center bottom;
+    }
+
+    &__tile{
+        border-radius: 4px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        color: $white;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        height: 100%;
+
+        &--label{
+            font-size: 30px;
+            font-weight: $semi-bold;
+            font-family: 'Manrope', sans-serif;
+            line-height: 1;
+            margin-bottom: 24px;
+        }
+
+        &--desc{
+            font-size: 16px;
+        }
+
+        &--bg1{
+            background-color: $bg-primary;
+            background-image: url(../img/Accounting_firms.svg);
+        }
+
+        &--bg2{
+            background-color: $bg-info;
+            background-image: url(../img/Startups.svg);
+        }
+
+        &--bg3{
+            background-color: $bg-info;
+            background-image: url(../img/Sole_proprietors.svg);
+        }
+
+        &--bg4{
+            background-color: $bg-primary;
+            background-image: url(../img/SMEs.png);
+        }
+    }    
+}
